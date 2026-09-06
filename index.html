@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Student Result Management System</h1>
+            <button id="darkModeBtn">&#127769; Dark Mode</button>
+        </div>
+        <div class="form-box">
+
+            <input type="text" id="name" placeholder="Student Name">
+            <input type="text" id="roll" placeholder="Roll Number">
+            <input type="number" id="marks" placeholder="Marks">
+            <button onclick="addStudent()" id="addBtn">
+                Add Student
+            </button>
+
+        </div>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchRoll"
+                placeholder="Search by Roll Number"
+                onkeyup="searchStudent()"
+            >
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>S.No.</th>
+                    <th>Name</th>
+                    <th>Roll Number</th>
+                    <th>Marks</th>
+                    <th>Grade</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentTable">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
