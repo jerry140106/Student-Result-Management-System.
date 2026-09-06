@@ -1,1 +1,1 @@
-# Student-Result-Management-System
+result management
